@@ -45,6 +45,7 @@ const acceptedItems = [
 
 const phoneHref = "tel:+77716464641";
 const whatsappHref = "https://wa.me/77716464641";
+const licensePdfHref = "/license-microfinance.pdf";
 
 export default function Home() {
   return (
@@ -132,6 +133,48 @@ export default function Home() {
             <span key={item}>{item}</span>
           ))}
         </div>
+      </section>
+
+      <section className="section license-section" aria-labelledby="license-title">
+        <div>
+          <p className="eyebrow">Лицензия</p>
+          <h2 id="license-title">
+            Лицензия на осуществление микрофинансовой деятельности
+          </h2>
+          <p>
+            ТОО &quot;ORTALYQ Ломбард&quot; имеет право на осуществление
+            микрофинансовой деятельности: деятельность ломбарда.
+          </p>
+        </div>
+        <dl className="license-details">
+          <div>
+            <dt>Номер лицензии</dt>
+            <dd>02.21.0070.L.</dd>
+          </div>
+          <div>
+            <dt>Дата выдачи</dt>
+            <dd>05.08.2025</dd>
+          </div>
+          <div>
+            <dt>Орган выдачи</dt>
+            <dd>
+              Агентство Республики Казахстан по регулированию и развитию
+              финансового рынка
+            </dd>
+          </div>
+          <div>
+            <dt>Адрес по лицензии</dt>
+            <dd>г. Алматы, Жетысуский район, микрорайон Айнабулак, дом 98Б</dd>
+          </div>
+        </dl>
+        <a
+          className="license-link"
+          href={licensePdfHref}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Открыть лицензию PDF
+        </a>
       </section>
 
       <section className="section addresses-section" id="addresses">

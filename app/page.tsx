@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 
 const branches = [
   {
@@ -49,9 +49,9 @@ export default function Home() {
       <section className="hero" aria-labelledby="site-title">
         <nav className="topbar" aria-label="Основная навигация">
           <a className="brand-link" href="#top" aria-label="ORTALYQ Ломбард">
-            <Image
+            <img
               className="brand-logo-small"
-              src="/ortalyq-logo.jpeg"
+              src="/ortalyq-logo.png"
               alt="ORTALYQ"
               width="64"
               height="64"
@@ -83,14 +83,12 @@ export default function Home() {
           </div>
 
           <div className="logo-lockup" aria-label="Логотип ORTALYQ Ломбард">
-            <Image
-              src="/ortalyq-logo.jpeg"
+            <img
+              src="/ortalyq-logo.png"
               alt="ORTALYQ"
-              width="500"
-              height="500"
-              priority
+              width="915"
+              height="885"
             />
-            <div className="logo-subtitle">ЛОМБАРД</div>
           </div>
         </div>
       </section>

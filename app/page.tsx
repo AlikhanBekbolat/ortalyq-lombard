@@ -43,6 +43,9 @@ const acceptedItems = [
   "PlayStation 4 и 5",
 ];
 
+const phoneHref = "tel:+77716464641";
+const whatsappHref = "https://wa.me/77716464641";
+
 export default function Home() {
   return (
     <main className="site-shell">
@@ -60,7 +63,10 @@ export default function Home() {
           </a>
           <div className="nav-actions">
             <a href="#addresses">Адреса</a>
-            <a href="tel:+77716464641">Позвонить</a>
+            <a href={phoneHref}>Позвонить</a>
+            <a href={whatsappHref} target="_blank" rel="noreferrer">
+              WhatsApp
+            </a>
           </div>
         </nav>
 
@@ -73,8 +79,16 @@ export default function Home() {
               Три отделения работают круглосуточно.
             </p>
             <div className="hero-actions">
-              <a className="primary-action" href="tel:+77716464641">
+              <a className="primary-action" href={phoneHref}>
                 8 771 64 64 641
+              </a>
+              <a
+                className="secondary-action"
+                href={whatsappHref}
+                target="_blank"
+                rel="noreferrer"
+              >
+                WhatsApp
               </a>
               <a className="secondary-action" href="#addresses">
                 Смотреть адреса
@@ -149,13 +163,21 @@ export default function Home() {
           <p className="eyebrow">Связь</p>
           <h2>Уточните оценку перед визитом</h2>
           <p>
-            Позвоните в ORTALYQ или напишите в Instagram, чтобы заранее
-            проверить условия по вашему товару.
+            Позвоните в ORTALYQ, напишите в WhatsApp или Instagram, чтобы
+            заранее проверить условия по вашему товару.
           </p>
         </div>
         <div className="contact-actions">
-          <a className="primary-action light" href="tel:+77716464641">
+          <a className="primary-action light" href={phoneHref}>
             Позвонить
+          </a>
+          <a
+            className="secondary-action light"
+            href={whatsappHref}
+            target="_blank"
+            rel="noreferrer"
+          >
+            WhatsApp
           </a>
           <a
             className="secondary-action light"

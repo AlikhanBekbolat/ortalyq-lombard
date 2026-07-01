@@ -100,8 +100,8 @@ export default function Home() {
             <img
               src="/ortalyq-logo.png"
               alt="ORTALYQ"
-              width="915"
-              height="885"
+              width="640"
+              height="640"
             />
           </div>
         </div>
